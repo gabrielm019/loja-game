@@ -26,8 +26,42 @@
 
 
                 </ul>
-                <form action="login.php" method
-                </form>
+                <form action="login.php" method="post" class="d-flex">
+                    <input class="form-control me-2" type="email" placeholder="E-mail">
+                    
+                    <input class="form-control me-2" type="password" placeholder="Senha">
+
+                    <button class="btn btn-outline-success" type="submit">Entrar</button>
+
+                    <a href="novo-usuario.php" class="btn btn-outline-success" type="submit">Cadastrar</button>
+                    
+                    
+                    </form>
+
+                    <div class="container-fluid banner">
+                    <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="god.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                    </div>
+                
             </div>
         </div>
     </nav>
