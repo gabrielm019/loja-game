@@ -21,8 +21,8 @@
         </li> -->
       </ul>
       <form action="login.php" method="post" class="d-flex">
-        <input class="form-control me-2" type="email" placeholder="E-mail">
-        <input class="form-control me-2" type="password" placeholder="Password">
+        <input class="form-control me-2" type="email" name="email" placeholder="E-mail">
+        <input class="form-control me-2" type="password" name="senha" placeholder="Password">
         <button class="btn btn-outline-success me-2" type="submit">Entrar</button>
         <a href="novo-usuario.php" class="btn btn-outline-primary" type="submit">Cadastrar</a>
       </form>
