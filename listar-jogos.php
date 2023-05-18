@@ -11,6 +11,11 @@ include "menu-sistema.php";
     </div>
     <div class="row">
         <div class="col">
+            <a href="novo-jogo.php" class="btn btn-success">NOVO JOGO</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
             <table class="table table-hover table-striped">
                 <thead>
                     <tr>
@@ -35,6 +40,13 @@ include "menu-sistema.php";
                                 <a href="excluir-jogos.php?id=<?php echo $um_jogo["id"]; ?>">
                                     <img src="excluir.png" width="20">
                                 </a>
+                                
+                                <a href="ver-jogo.php?id=<?php echo $um_jogo["id"]; ?>">
+                                <img src="ver.png" width="20">
+
+                                <a href="editar-jogo.php?id=<?php echo $um_jogo["id"]; ?>">
+                                <img src="edit.png" width="20">
+                                </a>
                             </td>
                         </tr>
                     <?php
@@ -47,32 +59,32 @@ include "menu-sistema.php";
     </div>
     <?php
 
-    $msg = $_GET['msg'] ?? "";
+$msg = $_GET['msg'] ?? "";
 
-    if ($msg == "excluido") {
-    ?>
-        <div class="toast-container position-fixed bottom-0 end-0 p-3">
-            <div id="liveToast" class="toast bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                    <img src="excluir.png" width="24" class="rounded me-2" alt="...">
-                    <strong class="me-auto">ATENÇÃO</strong>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body text-white">
-                    Jogo excluído com sucesso!
-                </div>
+if ($msg == "excluido") {
+?>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="img/icone-excluir.png" width="24" class="rounded me-2" alt="...">
+                <strong class="me-auto">ATENÇÃO</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body text-white">
+                Jogo excluído com sucesso!
             </div>
         </div>
-    <?php
-    }
-    ?>
+    </div>
+<?php
+}
+?>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script>
-    const toastLiveExample = document.getElementById('liveToast')
-    const toast = new bootstrap.Toast(toastLiveExample)
-    toast.show()
+const toastLiveExample = document.getElementById('liveToast')
+const toast = new bootstrap.Toast(toastLiveExample)
+toast.show()
 </script>
 
 </body>
