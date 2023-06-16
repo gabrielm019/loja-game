@@ -15,7 +15,7 @@ if ($um_usuario->num_rows > 0)
     header("location:painel.php");
 }
 else{
-    header ("locaton:index.php?msg=erro");
+    header ("location:index.php?msg=erro");
 }
 
 
